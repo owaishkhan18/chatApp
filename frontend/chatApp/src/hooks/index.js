@@ -17,7 +17,7 @@ const useSignup=()=>{
         if(!sucess) return ;
         setLoading(true);
         try{
-         const response = await axios.post("http://localhost:3000/api/auth/Signup",{
+         const response = await axios.post("http://43.204.147.252:3000/api/auth/Signup",{
           fullName, username, password, confirmPassword, gender
          });
          const data = response.data;

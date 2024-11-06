@@ -12,7 +12,7 @@ const Conversations=()=>{
     useEffect(() => {
         const fetchData = async () => {
             try {
-              const response = await axios.get("http://localhost:3000/api/users/user", {
+              const response = await axios.get("http://43.204.147.252:3000/api/users/user", {
                 headers: {
                   "Authorization": "Bearer " + localStorage.getItem("token")
                 }

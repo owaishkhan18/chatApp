@@ -10,7 +10,7 @@ const useLogin = () => {
 		if (!success) return;
 		setLoading(true);
 		try {
-			const response = await fetch("http://localhost:3000/api/auth/Login", {
+			const response = await fetch("http://43.204.147.252:3000/api/auth/Login", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({ username, password }),

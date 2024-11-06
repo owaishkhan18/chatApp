@@ -24,7 +24,7 @@ const Messages = () => {
         const getMessages = async () => {
             setLoading(true);
             try {
-                const res = await fetch(`http://localhost:3000/api/message/${selectedConversation._id}`, {
+                const res = await fetch(`http://43.204.147.252:3000/api/message/${selectedConversation._id}`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

@@ -19,7 +19,7 @@ const MessageInput =()=>{
 				console.error('No access token found');
 				return;
 			}
-			const url =`http://localhost:3000/api/message/send/${selectedConversation._id}`;
+			const url =`http://43.204.147.252:3000/api/message/send/${selectedConversation._id}`;
 			const res = await fetch(url, {
 				method: "POST",
 				headers: {
